@@ -7,13 +7,14 @@
 
     <style>
       #header-row {
-          background-color: cornflowerblue;
+        text-align: center;
+        background-color: cornflowerblue;
       }
-      
-      div#boxes {
-        border-style: solid;
-        border-width: 5px;
-        border-color: black;
+
+      .card-deck {
+        text-align: center;
+        display: flex;
+        width: 100%;
       }
     </style>
     
@@ -21,33 +22,40 @@
 
     <title>Mental Health Measure</title>
     
+    <div id="header-row">
+      <h1>Mental Health Measure</h1>
+    </div>
+    
   </head>
+  
+  <!-- Tabs -->
   <body>
-    <div class="container-fluid text-center">
-      <div class="row">
-        <div class="col" id="header-row">
-          <h1>Mental Health Measure</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <a href="index.html" class="btn btn-lg btn-secondary btn-block">Home</a>
-        </div>
-        <div class="col">
-          <a href="resources.html" class="btn btn-lg btn-secondary btn-block">Resources</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col" id="boxes">
-          <h3>Mental Illness Symptom Quiz</h3>
+    <ul class="nav nav-pills nav-fill">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="resources.html">Resources</a>
+      </li>
+    </ul>
+
+<!-- Content in cards -->
+
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Mental Illness Symptom Quiz</h5>
           <a href="terms.html" class="btn btn-lg btn-outline-secondary">Start</a>
         </div>
-        <div class="col" id="boxes">
-          <h3>About</h3>
-          <p>The Mental Illness Symptom Quiz is an online symptom quiz based on the DSM-5 form for measuring mental illness symptoms. Once you take the quiz, you will have the option to see a list of possible diagnoses for your symptoms.</p>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">About</h5>
+          <p class="card-text">The Mental Illness Symptom Quiz is an online symptom quiz based on the DSM-5 form for measuring mental illness symptoms. Once you take the quiz, you will have the option to see a list of possible diagnoses for your symptoms.</p>
         </div>
       </div>
     </div>
+    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
