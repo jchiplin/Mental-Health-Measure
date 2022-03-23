@@ -5,21 +5,277 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <style>
+      #quiz {
+        text-align: center;
+      }
+      .card-deck {
+        text-align: center;
+        display: flex;
+        width: 100%;
+      }
+    </style>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Mental Illness Symptom Quiz</title>
+    <title>Mental Illness Symptom Questionnaire</title>
     
   </head>
+  
   <body>
-    <div class="container-fluid text-center">
+    <nav class="navbar navbar-light" style="background-color: cornflowerblue;">
+      <a class="navbar-brand" href="index.html">Mental Health Measure</a>
+    </nav>
+
+
+<!-- Questions -->
+    <!-- Fixed row at the top for prompt and lichert scale -->
+    <!-- A row for each question and will have an identifier for each symptom for later use in javascript code -->
+
+    <!-- Prompt and Likert scale -->
+    <form>
+      <div class="container-fluid text-left">
+        <div class="form-group>
+          <div class="form-row">
+            <label for="prompt" class="form-label">During the past two weeks, how much (or how often) have you been bothered by the following problems?</label>
+          <div class="form-check form-check-inline">
+            <div class="col">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio0" value="option1" disabled>
+              <label class="form-check-label" for="inlineRadio0">0 - None (Not at all)</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" disabled>
+              <label class="form-check-label" for="inlineRadio1">1 - Slight (Rare, less than a day or two)</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1" disabled>
+              <label class="form-check-label" for="inlineRadio2">2 - Mild (Several days)</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1" disabled>
+              <label class="form-check-label" for="inlineRadio3">3 - Moderate (More than half the days)</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1" disabled>
+              <label class="form-check-label" for="inlineRadio4">4 - Severe (Nearly every day)</label>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Questions -->
+    <div class="container-fluid text-left">
       <div class="row">
         <div class="col">
-          <h2>Mental Illness Symptom Quiz</h2>
+          <h3>Questions</h3>
         </div>
       </div>
     </div>
+
+    <form>
+      <div class="container-fluid text-left">
+        <div class="form-group>
+          <div class="form-row">
+            <label for="littleInterest" class="form-label">1. Little interest or pleasure in doing things?</label>
+          <div class="form-check form-check-inline">
+            <div class="col">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio0" value="option1">
+              <label class="form-check-label" for="inlineRadio0">0</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">1</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1">
+              <label class="form-check-label" for="inlineRadio2">2</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1">
+              <label class="form-check-label" for="inlineRadio3">3</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1">
+              <label class="form-check-label" for="inlineRadio4">4</label>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </form>
+
+
+    <form>
+      <div class="container-fluid text-left">
+        <div class="form-group>
+          <div class="form-row">
+            <label for="feelingDown" class="form-label">2. Feeling down, depressed, or hopeless?</label>
+          <div class="form-check form-check-inline">
+            <div class="col">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio0" value="option1">
+              <label class="form-check-label" for="inlineRadio0">0</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">1</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1">
+              <label class="form-check-label" for="inlineRadio2">2</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1">
+              <label class="form-check-label" for="inlineRadio3">3</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1">
+              <label class="form-check-label" for="inlineRadio4">4</label>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form>
+      <div class="container-fluid text-left">
+        <div class="form-group>
+          <div class="form-row">
+            <label for="feelingIrritated" class="form-label">3. Feeling more irritated, grouchy, or angry than usual?</label>
+          <div class="form-check form-check-inline">
+            <div class="col">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio0" value="option1">
+              <label class="form-check-label" for="inlineRadio0">0</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">1</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1">
+              <label class="form-check-label" for="inlineRadio2">2</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1">
+              <label class="form-check-label" for="inlineRadio3">3</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1">
+              <label class="form-check-label" for="inlineRadio4">4</label>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form>
+      <div class="container-fluid text-left">
+        <div class="form-group>
+          <div class="form-row">
+            <label for="sleepingLess" class="form-label">4. Sleeping less than usual, but still have a lot of energy?</label>
+          <div class="form-check form-check-inline">
+            <div class="col">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio0" value="option1">
+              <label class="form-check-label" for="inlineRadio0">0</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">1</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1">
+              <label class="form-check-label" for="inlineRadio2">2</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1">
+              <label class="form-check-label" for="inlineRadio3">3</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1">
+              <label class="form-check-label" for="inlineRadio4">4</label>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form>
+      <div class="container-fluid text-left">
+        <div class="form-group>
+          <div class="form-row">
+            <label for="moreRisky" class="form-label">5. Starting lots more projects than usual or doing more risky things than usual?</label>
+          <div class="form-check form-check-inline">
+            <div class="col">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio0" value="option1">
+              <label class="form-check-label" for="inlineRadio0">0</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">1</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1">
+              <label class="form-check-label" for="inlineRadio2">2</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1">
+              <label class="form-check-label" for="inlineRadio3">3</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1">
+              <label class="form-check-label" for="inlineRadio4">4</label>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form>
+      <div class="container-fluid text-left">
+        <div class="form-group>
+          <div class="form-row">
+            <label for="feelingNervous" class="form-label">6. Feeling nervous, anxious, frightened, worried, or on edge?</label>
+          <div class="form-check form-check-inline">
+            <div class="col">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio0" value="option1">
+              <label class="form-check-label" for="inlineRadio0">0</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">1</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1">
+              <label class="form-check-label" for="inlineRadio2">2</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1">
+              <label class="form-check-label" for="inlineRadio3">3</label>
+            </div> 
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1">
+              <label class="form-check-label" for="inlineRadio4">4</label>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </form>
+    
+    
+    <!-- Submit button -->
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col">
+          <a href="quizSubmit.html" class="btn btn-lg btn-outline-secondary">Submit</a>
+        </div>
+      </div>
+    </div>
+
+
+    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
