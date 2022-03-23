@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <style>
-      #header-row {
+      #quiz {
         text-align: center;
-        background-color: cornflowerblue;
       }
-
       .card-deck {
         text-align: center;
         display: flex;
@@ -21,37 +19,43 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>Mental Health Measure</title>
-    
-    <div id="header-row">
-      <h1>Mental Health Measure</h1>
-    </div>
-    
+
   </head>
   
-  <!-- Tabs -->
   <body>
-    <ul class="nav nav-pills nav-fill">
-      <li class="nav-item">
-        <a class="nav-link active" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="resources.html">Resources</a>
-      </li>
-    </ul>
+    <nav class="navbar navbar-light" style="background-color: cornflowerblue;">
+      <a class="navbar-brand" href="index.html">Mental Health Measure</a>
+    </nav>
 
 <!-- Content in cards -->
-
     <div class="card-deck">
-      <div class="card">
+      <div class="card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">Mental Illness Symptom Quiz</h5>
-          <a href="terms.html" class="btn btn-lg btn-outline-secondary">Start</a>
+          <img src="https://images.unsplash.com/photo-1546521343-4eb2c01aa44b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" class="img-fluid" alt="Responsive image">
         </div>
       </div>
-      <div class="card">
+    </div>
+    
+    <div class="card-deck">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Mental Illness Symptom Questionnaire</h5>
+          <a href="terms.html" class="btn btn-lg btn-outline-primary">Start</a>
+        </div>
+      </div>
+    </div> 
+
+    <div class="card-deck">
+      <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">About</h5>
-          <p class="card-text">The Mental Illness Symptom Quiz is an online symptom quiz based on the DSM-5 form for measuring mental illness symptoms. Once you take the quiz, you will have the option to see a list of possible diagnoses for your symptoms.</p>
+          <p class="card-text">The Mental Illness Symptom Questionnaire is an online symptom questionnaire based on the DSM-5 form for measuring mental illness symptoms. Once you take the questionnaire, you will have the option to see a list of possible diagnoses for your symptoms.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Mental Illness Resources</h5>
+          <a href="resources.html" class="btn btn-lg btn-outline-secondary">Read More</a>
         </div>
       </div>
     </div>
