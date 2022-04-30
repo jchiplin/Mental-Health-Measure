@@ -227,10 +227,13 @@ function scoreQuiz() {
   btnToPut.appendChild(resourcesBtn);
 }
 
-//referenced https://www.w3schools.com/js/js_htmldom_elements.asp and https://css-tricks.com/why-javascript-is-eating-html/ and 
-//https://www.geeksforgeeks.org/how-to-check-whether-a-radio-button-is-selected-with-javascript/#:~:text=Use%20document.,otherwise%20check%20the%20next%20statement. and 
-//https://www.codegrepper.com/code-examples/javascript/javascript+add+%3Cp%3E+tag+to+a+div and 
-//https://stackoverflow.com/questions/45587843/adding-a-p-element-inside-a-div-with-javascript and 
-//https://www.codegrepper.com/code-examples/html/how+to+link+button+to+another+page+in+javascript and 
-//https://sebhastian.com/javascript-create-button/ and 
-//https://www.codegrepper.com/code-examples/javascript/javascript+prevent+double+click+on+button
+/*
+Referenced:
+https://www.w3schools.com/js/js_htmldom_elements.asp and https://css-tricks.com/why-javascript-is-eating-html/
+https://www.geeksforgeeks.org/how-to-check-whether-a-radio-button-is-selected-with-javascript/#:~:text=Use%20document.,otherwise%20check%20the%20next%20statement.
+https://www.codegrepper.com/code-examples/javascript/javascript+add+%3Cp%3E+tag+to+a+div
+https://stackoverflow.com/questions/45587843/adding-a-p-element-inside-a-div-with-javascript
+https://www.codegrepper.com/code-examples/html/how+to+link+button+to+another+page+in+javascript
+https://sebhastian.com/javascript-create-button/
+https://www.codegrepper.com/code-examples/javascript/javascript+prevent+double+click+on+button
+*/
