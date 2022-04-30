@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <style>
-      #quiz {
+      .background {
+        background-image: url('measure.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 300px 200px; 
         text-align: center;
       }
-      .card-deck {
+      .font {
         text-align: center;
-        display: flex;
-        width: 100%;
+        padding: 0px 20px; 
       }
     </style>
     
@@ -27,37 +31,24 @@
       <a class="navbar-brand" href="index.html">Mental Health Measure</a>
     </nav>
 
-<!-- Content in cards -->
-    <div class="card-deck">
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <img src="books.jpg">
-        </div>
-      </div>
+    <!-- Main section -->
+    <div class="container-fluid background">
+      <h1 style="color:white;">
+        Mental Illness Symptom Questionnaire
+      </h1>
+      <a href="terms.html" class="btn btn-lg btn-primary">Start</a>
+      <a href="resources.html" class="btn btn-lg btn-primary">Resources</a>
     </div>
+
+    <br>
     
-    <div class="card-deck">
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Mental Illness Symptom Questionnaire</h5>
-          <a href="terms.html" class="btn btn-lg btn-outline-primary">Start</a>
-        </div>
-      </div>
+    <div class="font">
+      <h2>About</h2>
+      <p class="card-text">The Mental Illness Symptom Questionnaire is an online symptom questionnaire based on the DSM-5 form for measuring mental illness symptoms. Once you take the questionnaire, you will have the option to see the resources page with links to helpful websites and more information on the symptoms.</p>
     </div> 
 
-    <div class="card-deck">
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">About</h5>
-          <p class="card-text">The Mental Illness Symptom Questionnaire is an online symptom questionnaire based on the DSM-5 form for measuring mental illness symptoms. Once you take the questionnaire, you will have the option to see links to resources and lists of possible diagnoses for each symptoms.</p>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Mental Illness Resources</h5>
-          <a href="resources.html" class="btn btn-lg btn-outline-secondary">Read More</a>
-        </div>
-      </div>
+    <div class="spacer">
+      &nbsp;
     </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -65,3 +56,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<!-- Referenced 
+https://getbootstrap.com/
+https://www.w3schools.com/html/html_images_background.asp
+Used as inspiration for home page: https://bootstrapmade.com/demo/Reveal/
+https://stackoverflow.com/questions/47383906/style-elements-in-html-page-to-adjust-dynamically-depending-on-the-size-of-the-s
+https://www.w3schools.com/css/css_font_size.asp
+https://unsplash.com/photos/nw2H5tAhR4I
+-->
