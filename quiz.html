@@ -38,6 +38,7 @@
       }
       #center {
         text-align: center;
+        padding: 0px 20px;
       }
       
     </style>
@@ -86,14 +87,6 @@
   
   <body>
 
-<!-- Questions -->
-    <!-- Fixed row at the top for prompt and lichert scale -->
-    <!-- A row for each question and will have an identifier for each symptom for later use in javascript code -->
-
-<!--
-    if Q1 >2 or Q2 >2, print that symptom on quizSubmit
--->
-    
 <!-- 
 Scoring:
   Q 1 2 - Depression (>2)
@@ -1054,19 +1047,13 @@ inhalants or solvents (like glue), or methamphetamine (like speed)]?
       <!-- Button -->
       <div class="text-center">
         <div class="col-sm">
-          <button type="button" id="submitBtn" onclick="JavaScript:scoreQuiz(); this.onclick=null;" class="btn btn-outline-secondary btn-lg">Submit</button>
+          <button type="button" id="submitBtn" onclick="JavaScript:scoreQuiz(); this.onclick=null; document.getElementById('jump').scrollIntoView();" class="btn btn-outline-secondary btn-lg">Submit</button>
         </div>
       </div>
     </form> 
 
-    <!-- onClick="JavaScript:enableButton()"
-        <button type="button" class="btn btn-outline-secondary btn-lg">Submit</button>-->
-
-    <!--           <a href="quizSubmit.html" onclick="JavaScript:scoreQuiz()" class="btn btn-lg btn-outline-secondary">Submit</a>
-    -->
-
     <div id="center">
-      <h2><br>Possible Mental Illness Symptoms</h2>
+      <h2 id="jump"><br>Possible Mental Illness Symptoms</h2>
       <div id="symptoms">
       </div>
       <div>
@@ -1079,34 +1066,6 @@ inhalants or solvents (like glue), or methamphetamine (like speed)]?
       &nbsp;
     </div>
 
-    <!--
-    H
-    -->
-    
-      <!--
-      <div id="resourceButton">
-        <div class="col-sm">
-          <br><a href="resources.html" class="btn btn-lg btn-secondary">Resources</a>
-        </div>
-      </div>
-      -->
-    
-    <!-- Submit button 
-    <div class="container-fluid text-center">
-      <div class="row">
-        <div class="col">
-          <a href="quizSubmit.html" class="btn btn-lg btn-outline-secondary">Submit</a>
-        </div>
-      </div>
-    </div>
-
-      <div class="form-group row text-center">
-        <div class="col-sm">
-          <a href="quizSubmit.html" class="btn btn-lg btn-outline-secondary">Submit</a>
-        </div>
-      </div>
-    -->
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -1117,7 +1076,9 @@ inhalants or solvents (like glue), or methamphetamine (like speed)]?
   </body>
 </html>
 
-<!-- Resources
+<!-- Resources:
+https://getbootstrap.com/docs/4.0/components/forms/
 https://stackoverflow.com/questions/38781349/how-to-make-onclick-event-to-work-only-once
+https://stackoverflow.com/questions/16349490/html-css-buttons-that-scroll-down-to-different-div-sections-on-a-webpage
 -->
 
