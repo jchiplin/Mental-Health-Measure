@@ -236,4 +236,5 @@ https://stackoverflow.com/questions/45587843/adding-a-p-element-inside-a-div-wit
 https://www.codegrepper.com/code-examples/html/how+to+link+button+to+another+page+in+javascript
 https://sebhastian.com/javascript-create-button/
 https://www.codegrepper.com/code-examples/javascript/javascript+prevent+double+click+on+button
+https://stackoverflow.com/questions/16349490/html-css-buttons-that-scroll-down-to-different-div-sections-on-a-webpage
 */
